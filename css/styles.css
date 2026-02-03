@@ -1,0 +1,11 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#eef2f3}
+.layout{display:grid;grid-template-columns:1fr 3fr 1.5fr;gap:20px;padding:20px}
+.menu{background:#2c3e50;color:white;padding:15px}
+.menu a{color:white;text-decoration:none}
+.content section{background:white;padding:15px;margin-bottom:20px;border-left:6px solid #3498db}
+.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.galeria img,.lugar img,.mapa,.news img{width:100%;margin-bottom:10px}
+.floating-link{position:fixed;top:20px;right:20px;background:#e74c3c;color:white;padding:10px;text-decoration:none}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.galeria{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.galeria{grid-template-columns:1fr}}
