@@ -10,7 +10,7 @@
 /* Estilo general del body */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #eef2f3;
 }
 
@@ -48,11 +48,12 @@ body {
 /* ============================= */
 
 .content section {
-    background-color: white;
-    padding: 15px;
+    background-color: #f9fbfc;
+    padding: 20px;
     margin-bottom: 20px;
-    border-left: 6px solid #3498db;
+    border-radius: 6px;
 }
+
 
 
 /* ============================= */
@@ -65,9 +66,29 @@ body {
     gap: 10px;
 }
 
+/* Quitamos márgenes por defecto del figure */
+.galeria figure {
+    margin: 0;
+}
+
+/* Todas las imágenes del mismo tamaño */
 .galeria img {
     width: 100%;
+    height: 200px;          /* altura fija para igualar */
+    object-fit: cover;      /* recorta sin deformar */
+    display: block;
 }
+
+/* Pie de foto */
+.galeria figcaption {
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #f4f4f4;
+}
+
+/* Comentario de ejemplo en el pie de foto (edítalo tú luego) */
+/* Ejemplo: Monumento emblemático de la ciudad */
 
 
 /* ============================= */
@@ -90,11 +111,20 @@ body {
     padding: 15px;
 }
 
-/* Cada noticia */
+/* Cada noticia (ahora es un enlace) */
 .news .noticia {
+    display: block;
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el ratón */
+.news .noticia:hover {
+    background-color: #f4f4f4;
 }
 
 /* Imagen de la noticia */
@@ -108,6 +138,12 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* Texto "Leer más" */
+.news .noticia span {
+    color: #3498db;
+    font-weight: bold;
 }
 
 /* Enlace */
