@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -50,7 +52,7 @@
 </figure>
 <figure>
 <img src="img/galeria/paris6.jpg">
-<figcaption>Parc des Princes Messi</figcaption>
+<figcaption>Paris Saint Germain</figcaption>
 </figure>
 </div>
 </section>
@@ -85,12 +87,38 @@
 
 <section id="mapa">
 <h2>Mapa de París</h2>
-<img class="mapa" src="img/paris-mapa.jpg">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77816092716!2d2.264633192871854!3d48.85893848515098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2zUGFyw61zLCBGcmFuw6dh!5e0!3m2!1sca!2ses!4v1770189549273!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <section id="extra">
 <h2>¿Sabías que...?</h2>
 <div class="alert alert-info">París recibe millones de turistas cada año.</div>
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="img/Sabias que/Sabias_que_1.jpg" class="d-block w-100" alt="Parc des Princes">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/Sabias que/Sabias_que_2.jpg" class="d-block w-100" alt="París">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/Sabias que/Sabias_que_3.jpg" class="d-block w-100" alt="Torre Eiffel">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
 </section>
 
 </main>
@@ -137,5 +165,6 @@
 
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
